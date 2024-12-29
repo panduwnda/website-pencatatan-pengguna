@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Pengguna</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="row justify-content-between py-5">
+        <div class="col-12 col-md-6">
+          <h1 class="display-4 text-primary font-weight-bold">Website Pencatatan Pengguna</h1>
+          <p class="lead text-muted">Solusi cerdas untuk mencatat dan mengelola data pengguna dengan mudah.</p>
+        </div>
+        <div class="col-12 col-md-6 text-end">
+          <img src="assets/logo.png" alt="Logo" class="img-fluid logo" style="max-height: 80px" />
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero text-center py-5 mb-4">
+        <h2 class="display-5 text-white">Daftar Pengguna Baru</h2>
+        <p class="text-light">Isi formulir berikut untuk mendaftar dan mulai mengelola data pengguna.</p>
+      </section>
+
+      <!-- Sidebar and Content -->
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-12 col-md-3 bg-light p-4 rounded-3 shadow">
+          <h3 class="text-primary">Navigasi</h3>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="btn btn-block btn-outline-primary mb-3">Halaman Utama</a></li>
+            <li><a href="signup.html" class="btn btn-block btn-outline-secondary mb-3">Pendaftaran</a></li>
+            <li><a href="users.php" class="btn btn-block btn-outline-info mb-3">Daftar Pengguna</a></li>
+          </ul>
+        </nav>
+
+        <!-- Formulir Pendaftaran -->
+        <main class="col-12 col-md-9">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Formulir Pendaftaran</h3>
+              <form action="server/proses.php" method="POST">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="name" name="name" required />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required />
+                </div>
+                <div class="mb-3">
+                  <label for="gender" class="form-label">Jenis Kelamin</label>
+                  <div><input type="radio" id="male" name="gender" value="Laki-laki" required /> Laki-laki <input type="radio" id="female" name="gender" value="Perempuan" required /> Perempuan</div>
+                </div>
+                <div class="mb-3">
+                  <label for="address" class="form-label">Alamat</label>
+                  <textarea class="form-control" id="address" name="address" required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Nomor Telepon</label>
+                  <input type="text" class="form-control" id="phone" name="phone" required />
+                </div>
+                <button type="submit" class="btn btn-lg btn-info text-white shadow-lg">Daftar</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer class="text-center py-4">
+        <p>&copy; 2024 Website Pencatatan Pengguna | All Rights Reserved</p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

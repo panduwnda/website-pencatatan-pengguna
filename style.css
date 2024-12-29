@@ -1,0 +1,87 @@
+/* Background gradient untuk halaman hero */
+.hero {
+  background: linear-gradient(to right, #004d7a, #0099cc);
+  color: white;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+/* Mengatur header logo */
+.logo {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Tombol yang lebih menarik dengan hover */
+.btn-lg {
+  border-radius: 30px;
+  padding: 15px 30px;
+}
+
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-info {
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-outline-info:hover {
+  background-color: #17a2b8;
+  color: white;
+}
+
+/* Styling untuk footer */
+footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e4e4e4;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* Styling untuk sidebar */
+nav {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-weight: bold;
+}
+
+/* Menambahkan jarak dan margin pada elemen */
+.card-body {
+  padding: 30px;
+}
+
+.card {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+/* Responsif */
+@media (max-width: 576px) {
+  .hero {
+    padding: 20px;
+  }
+  .btn-lg {
+    width: 100%;
+  }
+}
